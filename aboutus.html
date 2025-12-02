@@ -1,0 +1,569 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yiğit Yılmaz" />
+    <meta name="keywords" content="Yiğit Yılmaz" />
+    <meta name="author" content="Yiğit Yılmaz" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<style>
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #f4f4f4 !important;
+        margin: 0;
+    }
+
+    #page {
+        background-color: transparent !important;
+        position: relative;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-wrap {
+        background-color: #ffffff !important;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-top: 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .gap-spacer {
+        width: 100%;
+        height: 5px;
+        background-color: transparent;
+        clear: both;
+        display: block;
+    }
+
+    #fh5co-hero .flexslider .slider-text>.slider-text-inner {
+        vertical-align: top !important;
+        padding-top: 0px !important;
+    }
+
+    abbr[title] {
+        cursor: help !important;
+        border-bottom: 1px dotted #777 !important;
+        text-decoration: none !important;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-header h3 {
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .section-header::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #2db06b;
+        margin: 0 auto;
+    }
+
+    .bio-card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+        border-left: 5px solid #2db06b;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        margin-top: 10px;
+    }
+
+    .custom-table thead th {
+        background-color: transparent;
+        color: #2db06b;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        padding-bottom: 15px;
+    }
+
+    .custom-table tbody tr {
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+        transition: transform 0.2s ease;
+    }
+
+    .custom-table tbody tr:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-table td {
+        padding: 15px 20px;
+        border: none;
+        color: #555;
+        vertical-align: middle;
+    }
+
+    .custom-table td:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .custom-table td:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .skills-column {
+        margin: 0 auto;
+        padding: 30px 15px;
+        background: transparent;
+    }
+
+    .skills-title {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 18px;
+        letter-spacing: 0.6px;
+    }
+
+    .skill-item {
+        margin-bottom: 20px;
+    }
+
+    .skill-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .skill-name {
+        font-weight: 600;
+        font-size: 14px;
+        color: #111;
+    }
+
+    .skill-percent {
+        font-size: 13px;
+        color: #666;
+    }
+
+    .skill-bar {
+        width: 100%;
+        height: 12px;
+        background: #e6e6e6;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .skill-fill {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, #39c26b 0%, #2db06b 100%);
+        border-radius: 8px;
+        transition: width 3s cubic-bezier(.25, .8, .25, 1);
+        box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (max-width: 480px) {
+        .skills-column {
+            padding: 18px 12px;
+        }
+
+        .skills-title {
+            font-size: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+        <div class="container-wrap" style="margin-bottom: 0 !important;">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container-wrap">
+                    <div class="top-menu">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <div id="fh5co-logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" alt="Logo" class="navbar-logo"> Yiğit Yılmaz
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-10 text-right menu-1">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="aboutus.html">About</a></li>
+                                    <li><a href="galery.html">Gallery</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li class="has-dropdown">
+                                        <a href="project.html">Projects</a>
+                                        <ul class="dropdown">
+                                            <li><a href="projectan.html">Animation </a></li>
+                                            <li><a href="projectph.html">Photoshop </a></li>
+                                            <li><a href="projectpy.html">Python</a></li>
+                                        </ul>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="hakkimda.html">Turkish</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <aside id="fh5co-hero">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li
+                            style="background-image: url(images/ves.jpg); background-size: contain; background-position: center 70px; background-repeat: no-repeat; background-color: #f0f0f0;">
+                            <div class="overlay-gradient"></div>
+                            <div class="container-fluids">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 slider-text">
+                                        <div class="slider-text-inner text-center">
+                                            <h1 style="color: black; margin-top: 15px;">About Me</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center section-header">
+                    <h3>Who Am I?</h3>
+                </div>
+
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="bio-card">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <img src="images/ves.jpg" alt="Yiğit Yılmaz" class="img-responsive img-circle"
+                                    style="max-width: 150px; margin: 0 auto;">
+                            </div>
+                            <div class="col-md-9">
+                                Hello, I'm <strong>Yiğit Yılmaz</strong>. I was born in 2005 and I'm from <abbr
+                                    title="The Tourism Capital of Turkey">Antalya</abbr>.
+                                I completed my entire education in Antalya and I am currently continuing my studies
+                                here.
+                                My hobbies include coding, cycling, playing video games, street basketball,
+                                going to concerts, and listening to/writing songs. I started coding with Python
+                                during the quarantine period in 2022, but I took a break starting in 2023 to
+                                prepare for the university entrance exam. I resumed coding when I started
+                                university in 2024. Currently, I am both coding and producing videos using
+                                AI tools.
+                                <br><br>
+                                <em>"My goals are to specialize in game development, artificial intelligence,
+                                    and machine learning. For this, my motto is 'Things of Quality have no fear of
+                                    time'."</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animate-box">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="text-center section-header" style="margin-top: 20px;">
+                        <h3>My Education</h3>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table custom-table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>School Name</th>
+                                    <th>Department / Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Primary School (1-3)</td>
+                                    <td>Kamile Çömlekçioğlu Primary School</td>
+                                    <td>Graduated</td>
+                                </tr>
+                                <tr>
+                                    <td>Primary School (4)</td>
+                                    <td>Hakkı Tatoğlu Primary School</td>
+                                    <td>Graduated</td>
+                                </tr>
+                                <tr>
+                                    <td>Middle School</td>
+                                    <td>Melahat Faraçlar Middle School</td>
+                                    <td>Graduated</td>
+                                </tr>
+                                <tr>
+                                    <td>High School</td>
+                                    <td>Aldemir Atilla Konuk Anatolian High School</td>
+                                    <td>Graduated</td>
+                                </tr>
+                                <tr>
+                                    <td>Associate Degree (1st Term)</td>
+                                    <td><abbr title="Antalya Bilim University">ABU</abbr></td>
+                                    <td>Computer Programming (Transfer)</td>
+                                </tr>
+                                <tr>
+                                    <td>Associate Degree (Current)</td>
+                                    <td><abbr title="Akdeniz University">AKDU</abbr></td>
+                                    <td>Computer Programming (2nd Year, Ongoing)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row animate-box" style="margin-top: 40px;">
+                <div class="col-md-10 col-md-offset-1">
+                    
+                    <div class="col-md-6">
+                        <section id="skills-column" class="skills-column">
+                            <h2 class="skills-title">My Skills</h2>
+
+                            <ul class="skills-list" style="list-style: none; padding: 0; margin: 0;">
+                                <li class="skill-item" style="margin-bottom: 20px;">
+                                    <div class="skill-header">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-bar" aria-hidden="true">
+                                        <div class="skill-fill" data-percent="80" style="width: 0%;"></div>
+                                    </div>
+                                </li>
+
+                                <li class="skill-item" style="margin-bottom: 20px;">
+                                    <div class="skill-header">
+                                        <span class="skill-name">HTML</span>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-bar" aria-hidden="true">
+                                        <div class="skill-fill" data-percent="90" style="width: 0%;"></div>
+                                    </div>
+                                </li>
+
+                                <li class="skill-item" style="margin-bottom: 20px;">
+                                    <div class="skill-header">
+                                        <span class="skill-name">CSS</span>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                    <div class="skill-bar" aria-hidden="true">
+                                        <div class="skill-fill" data-percent="70" style="width: 0%;"></div>
+                                    </div>
+                                </li>
+
+                                <li class="skill-item" style="margin-bottom: 20px;">
+                                    <div class="skill-header">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percent">30%</span>
+                                    </div>
+                                    <div class="skill-bar" aria-hidden="true">
+                                        <div class="skill-fill" data-percent="30" style="width: 0%;"></div>
+                                    </div>
+                                </li>
+
+                                <li class="skill-item" style="margin-bottom: 20px;">
+                                    <div class="skill-header">
+                                        <span class="skill-name">ASP.NET Core</span>
+                                        <span class="skill-percent">20%</span>
+                                    </div>
+                                    <div class="skill-bar" aria-hidden="true">
+                                        <div class="skill-fill" data-percent="20" style="width: 0%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="col-md-6">
+                        <section id="interests-column" class="skills-column">
+                            <h2 class="skills-title">My Interests</h2>
+
+                            <h4 style="margin-top: 20px; font-weight: bold;">Hobbies</h4>
+                            <ul style="margin-bottom: 30px; line-height: 1.8;">
+                                <li>Cycling</li>
+                                <li>Playing street basketball</li>
+                                <li>Going to concerts</li>
+                                <li>Listening to & writing songs</li>
+                            </ul>
+
+                            <h4 style="font-weight: bold;">Digital Interests</h4>
+                            <ol style="line-height: 1.8;">
+                                <li>Coding</li>
+                                <li>Playing video games</li>
+                            </ol>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row animate-box" style="margin-top: 30px;">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3>Want to Reach Me?</h3>
+                    <p>You can reach me via the social media accounts below. We can collaborate on a project, or
+                        just become friends and chat about our common interests!</p>
+                    <ul class="fh5co-social-icons">
+                        <li><a href="https://www.instagram.com/hawelion/"><i class="icon-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100005332866715&locale=tr_TR"><i
+                                    class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/yi%C4%9Fit-y%C4%B1lmaz-979623353/"><i
+                                    class="icon-linkedin"></i></a></li>
+                        <li><a href="https://github.com/iamyigityilmaz"><i class="icon-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+        </div>
+        <div class="gap-spacer"></div>
+
+        <div class="container-wrap" style="margin-top: 0 !important;">
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="row">
+                    <div class="col-md-3 fh5co-widget">
+                        <h4>About Me </h4>
+                        <p>Hi, I am Yiğit, I study at Akdeniz University. And I am interested in software. You can check
+                            the About section for more information.</p>
+                    </div>
+
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Social Media</h4>
+                        <ul class="fh5co-footer-links">
+                            <li><a
+                                    href="https://www.facebook.com/profile.php?id=100005332866715&locale=tr_TR">Facebook</a>
+                            </li>
+                            <li><a href="https://github.com/iamyigityilmaz">Github</a></li>
+                            <li><a href="https://www.instagram.com/hawelion/">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/yi%C4%9Fit-y%C4%B1lmaz-979623353/">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-md-push-1">
+                        <h4>Pages</h4>
+                        <ul class="fh5co-footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="galery.html">Gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Contact Information</h4>
+                        <ul class="fh5co-footer-links">
+                            <li>
+                                <a href="+90 05xxxxxxxx">+90 05xxxxxxxx</a>
+                            </li>
+                            <li>
+                                <a href="yigityilmaz.24207@gmail.com">yigityilmaz.24207@gmail.com</a>
+                            </li>
+                            <li><i class="icon-location4"></i><a
+                                    href="https://maps.app.goo.gl/t9jV8rurMZG4Cxec9">Akdeniz
+                                    University, Antalya ,Turkey</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">© 2025 Yiğit Yılmaz</small>
+                        </p>
+                        <ul class="fh5co-social-icons">
+                            <li><a href="https://www.instagram.com/hawelion/"><i class="icon-instagram"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100005332866715&locale=tr_TR"><i
+                                        class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/yi%C4%9Fit-y%C4%B1lmaz-979623353/"><i
+                                        class="icon-linkedin"></i></a></li>
+                            <li><a href="https://github.com/iamyigityilmaz"><i class="icon-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // SKILLS ANIMATION SCRIPT
+            // Sayfa yüklendiğinde barların dolması için
+            var fills = document.querySelectorAll('.skill-fill');
+            fills.forEach(function (fill, idx) {
+                var p = parseInt(fill.getAttribute('data-percent'), 10) || 0;
+                setTimeout(function () {
+                    fill.style.width = p + '%';
+                    fill.setAttribute('aria-valuenow', p);
+                }, idx * 120);
+            });
+        });
+    </script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
